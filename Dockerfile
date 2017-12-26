@@ -1,7 +1,7 @@
 # Docker in Docker on Ubuntu 16.04
 
 FROM ubuntu:16.04
-# LABEL maintainer="Ryo Ota <nwtgck@gmail.com>"
+LABEL maintainer="Ryo Ota <nwtgck@gmail.com>"
 
 RUN apt-get update
 RUN apt install -y \
