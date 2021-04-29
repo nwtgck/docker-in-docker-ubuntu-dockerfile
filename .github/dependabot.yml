@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/"
+  schedule:
+    interval: daily
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 99
+  reviewers:
+  - nwtgck
+  assignees:
+  - nwtgck
+  ignore:
+  - dependency-name: ubuntu
+    versions:
+    - "< 19, >= 18.a"
